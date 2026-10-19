@@ -1,3 +1,5 @@
+#define CTEST_IMPL
+
 #include <assert.h>
 
 #include "ctest.h"
