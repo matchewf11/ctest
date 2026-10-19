@@ -1,4 +1,4 @@
-TARGET = test
+TARGET = ctest
 CFLAGS = -Wall -Wextra -Werror
 
 run: $(TARGET)
