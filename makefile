@@ -1,8 +1,11 @@
 TARGET = ctest
 CFLAGS = -Wall -Wextra -Werror
+SRC = test.c
+CC = gcc
+HEADER_LIBS = ctest.h
 
 run: $(TARGET)
-	./test
+	./$(TARGET)
 
-$(TARGET): test.c ctest.h
-	gcc -o $(TARGET) $(CFLAGS) test.c
+$(TARGET): $(SRC) $(HEADER_LIBS)
+	$(CC) -o $(TARGET) $(CFLAGS) $(SRC)
